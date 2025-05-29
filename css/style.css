@@ -1,0 +1,133 @@
+/* Colors
+
+background: #212526 black, #F9F6F2 white
+titles: #F4F4F5 white, #1A1D1F black
+hero-background: #F9F6F2 white
+text: #F4F4F5 anti-flash white, #212526 black
+subtext: #4A4E52 grey
+highlight: #00D8B6 teal, #FF6B6B coral
+Secondary: #C8B7A6 Beige, #788AA3 grey, #5FB3A9 green
+           #D78B8B red,rose, #9AA98F dark green
+
+
+*/
+
+/*-- Main --*/
+
+body {
+  font-family: "Noto Sans", sans-serif !important;
+  background-color: #f9f6f2;
+}
+
+h2, h3 {
+  color: #1A1D1F;
+  font-family: "Roboto Serif", serif;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+
+/*-- Hero Section --*/
+
+.navbar .nav-link.active,
+h5 {
+  color: #f4f4f5;
+}
+
+#hero {
+  background-color: #212526;
+  padding-bottom: 4rem;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(ellipse, #f9f6f210 0%, transparent 50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-box {
+  height: 70vh;
+}
+
+.hero-box .row {
+  height: 100%;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.hero-text h2 {
+  letter-spacing: 0.15rem;
+  font-size: 3rem;
+  margin: 0;
+  color: #f4f4f5;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+  color: #f4f4f58c;
+}
+
+.hero-picture {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+#circle-container {
+  position: absolute;
+  height: 100%;
+  background-color: #f9f6f2;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  box-shadow: 0px 0 80px #f9f6f220;
+  filter: brightness(1.05) contrast(1.1);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: 1px solid #212526;
+}
+
+@media (max-width: 1000px) {
+  #circle-container {
+    height: 85%;
+  }
+}
+
+@media (max-width: 770px) {
+  .hero-text {
+    order: 2;
+    height: auto;
+  }
+
+  .hero-picture {
+    height: 400px;
+    padding-top: 30px;
+  }
+}
+
+#hero-profile {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*-- About Me --*/
