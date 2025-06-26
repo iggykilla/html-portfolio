@@ -1,0 +1,276 @@
+/*-- Hero Section --*/
+#hero {
+    background-color: #212526;
+    padding-bottom: 4rem;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(ellipse, #f9f6f210 0%, transparent 50%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-box {
+    height: 80vh;
+}
+
+.hero-box .row {
+    height: 100%;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.hero-text h2 {
+    letter-spacing: 0.15rem;
+    font-size: 3rem;
+    margin: 0;
+    color: #f4f4f5;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    opacity: 0.8;
+    color: #f4f4f58c;
+}
+
+.hero-picture {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+#circle-container {
+    position: absolute;
+    height: 100%;
+    background-color: #f9f6f2;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    box-shadow: 0px 0 80px #f9f6f220;
+    filter: brightness(1.05) contrast(1.1);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 1px solid #212526;
+}
+
+@media (max-width: 1000px) {
+    #circle-container {
+        height: 85%;
+    }
+}
+
+@media (max-width: 770px) {
+    .hero-text {
+        order: 2;
+        height: auto;
+    }
+
+    .hero-picture {
+        height: 400px;
+        padding-top: 50px;
+    }
+}
+
+#hero-profile {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*-- About Me --*/
+
+#about-me {
+    margin: 5em auto;
+}
+
+#about-me p {
+    line-height: 1.6;
+    max-width: 110ch;
+    margin-bottom: 1.25rem;
+}
+
+/*-- Skills-Education --*/
+
+#skills-education {
+    margin: 5em auto;
+}
+
+.skills {
+    order: 2;
+}
+
+@media (max-width: 768px) {
+    .skills {
+        margin-top: 5em;
+    }
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: auto 3fr 50px;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 0.5em;
+}
+
+.skill-name {
+    width: 4em;
+    margin-right: 1em;
+    letter-spacing: 0.06rem;
+    font-weight: 700;
+}
+
+.skill-bar {
+    background-color: #edeae4;
+    height: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.7s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .skills-list {
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+/*-- Skill Bars --*/
+
+.skill-fill.c {
+    background-color: #9aa98f;
+    width: 40%;
+}
+
+.skill-fill.python {
+    background-color: #d78b8b;
+    width: 20%;
+}
+
+.skill-fill.sql {
+    background-color: #5982c5;
+    width: 60%;
+}
+
+.skill-fill.lua {
+    background-color: #8f6eaf;
+    width: 40%;
+}
+
+.skill-fill.html {
+    background-color: #5fb3a9;
+    width: 40%;
+}
+
+.skill-fill.css {
+    background-color: #d78b8b;
+    width: 40%;
+}
+
+.skill-fill.js {
+    background-color: #d8b85f;
+    width: 40%;
+}
+
+.skill-fill.react {
+    background-color: #00D8B6;
+    width: 40%;
+}
+
+.education-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.education-list>li {
+    margin-bottom: 1.5rem;
+}
+
+.education-list>li:last-child {
+    margin-bottom: 0rem;
+}
+
+.education-list>li>strong {
+    font-size: 1.1rem;
+    color: #1a1d1f;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.education-list ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.education-list ul li::marker {
+    color: #5fb3a9;
+}
+
+.education-list ul li {
+    margin-bottom: 0.3rem;
+    color: #4a4e52;
+}
+
+/*-- Work Exp --*/
+
+#work-experience {
+    margin: 5em auto;
+}
+
+.experience-entry {
+    margin-bottom: 2rem;
+    max-width: 60ch;
+}
+
+.experience-entry h4 {
+    color: #1A1D1F;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.location {
+    font-weight: 400;
+    color: #212526;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #4A4E52;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.experience-entry ul {
+    padding-left: 1.5rem;
+    list-style: disc;
+}
+
+.experience-entry ul li::marker {
+    color: #5fb3a9;
+}
+
+.experience-entry ul li {
+    margin-bottom: 0.3rem;
+    color: #4a4e52;
+}

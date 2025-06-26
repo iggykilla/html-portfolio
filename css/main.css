@@ -1,0 +1,46 @@
+/* Colors
+
+background: #212526 black, #F9F6F2 white
+titles: #F4F4F5 white, #1A1D1F black
+hero-background: #F9F6F2 white
+text: #F4F4F5 anti-flash white, #212526 black
+subtext: #4A4E52 grey
+highlight: #00D8B6 teal, #FF6B6B coral
+Secondary: #C8B7A6 Beige, #788AA3 grey, #5FB3A9 green
+           #D78B8B red,rose, #9AA98F dark green, #5982C5 blue
+           #8F6EAF purple, #D8B85F yellow
+
+
+*/
+
+/*-- Main --*/
+body {
+  font-family: "Noto Sans", sans-serif !important;
+  background-color: #f9f6f2;
+}
+
+h1,
+h2,
+h3 {
+  color: #1a1d1f;
+  font-family: "Roboto Serif", serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.navbar .nav-link.active,
+h5 {
+  color: #f4f4f5;
+}
