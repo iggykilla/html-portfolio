@@ -1,0 +1,49 @@
+HTML Tags Used:
+1. <h1> — Used for main headers (e.g., portfolio, birthday, contact).
+2. <h2> — Subheadings like “On the 16th May” or section labels.
+3. <h3> — Section headers such as “About Me”, “Skills”, etc.
+4. <h4> — Subtitles in work experience.
+5. <p> — Paragraphs for description, contact info, summaries.
+6. <ul> — Unordered lists for skills, education, experience, birthday items.
+7. <li> — Items inside unordered lists.
+8. <a> — Hyperlinks to internal pages and external links (GitHub, LinkedIn, Google Maps).
+9. <img> — Profile image, project previews, logos.
+10. <nav> — Bootstrap navigation bars across all pages.
+11. <footer> — Footer section with copyright.
+12. <section> — Semantic grouping of page content.
+13. <div> — Layout containers for flex/grid.
+14. <span> — Inline elements for location, text decoration.
+15. <main> — Main content wrapper on index.html.
+16. <script> — Loads Bootstrap JavaScript bundle for interactive components.
+
+CSS Selectors Used:
+1. body — Tag selector to set background color and fonts.
+2. .hero-text, .project-btn, .skill-fill, .navbar — Class selectors for custom components.
+3. #hero, #about-me, #skills-education — ID selectors for section targeting.
+4. .project-card:hover, .project-btn:focus — Pseudo-class selectors for interaction.
+5. .education-list > li > strong — Complex/nested selector for styling specific sub-elements.
+
+CSS Properties Used:
+1. background-color — Used across layouts and components.
+2. color — For text and accents (white, black, muted tones).
+3. font-size — For headings, paragraphs, and buttons.
+4. margin / padding — Used extensively for spacing.
+5. border-radius — For rounded corners on images and buttons.
+6. box-shadow — On cards and containers for visual depth.
+7. display, flex, grid, gap — For layout structure.
+8. transition, transform — For smooth hover/interaction effects.
+
+Bootstrap Usage:
+Bootstrap is used for:
+- A responsive navigation bar (with offcanvas behavior on mobile).
+- Layout system using container, row, and col-* classes.
+- Utility classes like my-5, py-3, text-center, bg-dark.
+- Responsive image and button styling in cards.
+- Toggle/Collapse behavior in the navbar using navbar-toggler.
+
+JavaScript Usage:
+JavaScript is integrated via Bootstrap’s JS bundle:
+- Enables interactive components such as:
+  - Navbar toggling on mobile.
+  - Offcanvas menu, dismissable buttons, and other Bootstrap JS interactions.
+- Custom JavaScript.
